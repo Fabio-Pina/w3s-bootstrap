@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<title>Bootstrap 4 - Cards</title>
+		<!-- Boostrap -->
+		<link rel="stylesheet" href="../node_modules/bootstrap/compiler/bootstrap.css">
+		<!-- jQuery -->
+		<script src="../node_modules/jquery/dist/jquery.js"></script>
+		<!-- PopperJS -->
+		<script src="../node_modules/popper.js/dist/popper.js"></script>
+		<!-- JavaScript -->
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	</head>
+	<body>
+		<!-- Basic Card -->
+		
+		<div class="container">
+			<h2>Basic Card</h2>
+			<div class="card">
+				<div class="card-body">Basic Card</div>
+			</div>
+		</div>
+
+		<!-- Header and Footer -->
+
+		<div class="container">
+			<h2>Card Header and Footer</h2>
+			<div class="card">
+			<div class="card-header">Header</div>
+			<div class="card-body">Content</div>
+			<div class="card-footer">Footer</div>
+		</div>
+	</div>
+
+		<!-- Contextual Cards -->
+
+		<div class="container">
+			<h2>Contextual Cards</h2>
+			<div class="card">
+				<div class="card-body">Basic Card</div>
+			</div>
+			<br>
+			<div class="card bg-primary text-white">
+				<div class="card-body">Primary Card</div>
+			</div>
+			<br>
+			<div class="card bg-success text-white">
+				<div class="card-body">Success card</div>
+			</div>
+			<br>
+			<div class="card bg-info text-white">
+				<div class="card-body">Info card</div>
+			</div>
+			<br>
+			<div class="card bg-warning text-white">
+				<div class="card-body">Warning card</div>
+			</div>
+			<br>
+			<div class="card bg-danger text-white">
+				<div class="card-body">Danger</div>
+			</div>
+			<br>
+			<div class="card bg-secondary text-white">
+				<div class="card-body">Secondary</div>
+			</div>
+			<br>
+			<div class="card bg-dark text-white">
+				<div class="card-body">Dark</div>
+			</div>
+			<br>
+			<div class="card bg-light text-dark">
+				<div class="card-body"><a href="www.google.com">Light</a></div> <!-- Grifo meu -->
+			</div>
+		</div>
+
+		<!-- Titles, text and links -->
+
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Card title</h4>
+				<p class="card-text">Some example text. Some example text.</p>
+				<a href="#" class="card-link">Card link</a>
+				<a href="#" class="card-link">Another link</a>
+			</div>
+		</div>
+	</div>
+
+			<!-- Card Images -->
+
+			<div class="container">
+				<h2>Card Image</h2>
+				<p>Image at the top (card-img-top):</p>
+				<div class="card" style="width: 400px;">
+					<img class="card-img-top" src="../img/man.png" alt="Card Image" style="width:100%">
+				<div class="card-body">
+					<h4 class="card-title">Fábio Pina</h4>
+					<p class="card-text">Desenvolvedor Front-End: HTML | CSS | JavaScript | Bootstrap.</p>
+					<a href="#" class="btn btn-primary">Sobre Mim</a>
+				</div>
+			</div>
+			<br>
+
+			<p>Image at the bottom (card-img-bottom):</p>
+			<div class="card" style="width:400px">
+			<div class="card-body">
+				<h4 class="card-title">Janaína Pina</h4>
+				<p class="card-text">Esteticista e Cosmostóloga</p>
+				<a href="#" class="btn btn-danger">Sobre Mim</a>
+			</div>
+			<img class="card-img-bottom" src="../img/women.png" alt="Janaína" style="width: 100%;">
+		</div>	
+		</div>
+
+		<!-- Stretched Link -->
+
+		<div class="container">
+			<h2>Stretched Link in Card</h2>
+			<p>Add the .stretched-link class to a link inside the card, and it will make the whole card clickable (the card will act as a link):</p>
+			<div class="card" style="width: 400px;">
+			<img class="card-img-top" src="../img/man.png" alt="Card Image" style="width: 100%">
+			<div class="card-body">
+				<h4 class="card-title">Fábio Pina</h4>
+				<p class="card-text">Desenvolvedor FrontEnd HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
+				<a href="#" class="btn btn-danger stretched-link">Sobre Mim</a>
+			</div>
+		 </div>
+	  </div>
+		
+		<!-- Card Image Overlays -->
+
+		<div class="container">
+			<h2>Card Image Overlay</h2>
+			<p>Turn an image into a card background and use .card-img-overlay to overlay the card's text:</p>
+			<div class="card img-fluid" style="width: 500px;">
+			<img class="card-img-top" src="../img/man.png" alt="Card Image" style="width: 100%;">
+			<div class="card-img-overlay">
+				<h4 class="card-title">Fábio Pina</h4>
+				<p class="card-text">Desenvolvedor Front-End HTML | Css | JavaScript  Bootstrap</p>
+				<a href="#" class="btn btn-primary">Quem sou eu?</a>
+			</div>
+		 </div>
+		</div>
+
+		<div class="container">
+			<h2>Card Colums</h2>
+			<p>The <strong>.card-columns</strong> class creates a masonry-like grid of cards. The layout will automatically adjust as you insert more cards.</p>
+			<p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+			<div class="card-columns">
+				<div class="card bg-primary">
+					<div class="card-body text-center">
+						<p class="card-text">Some text inside the first card</p>
+					</div>
+				</div>
+			<div class="card bg-warning">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the second card</p> 
+				</div>
+			</div>
+			<div class="card bg-success">
+				<div class="card-body text-center">
+					<p class="card-text">Some text inside the third card</p>
+				</div>
+			</div>
+				<div class="card bg-danger">
+					<div class="card-body text-center">
+						<p class="card-text">Some text inside the fourth card</p>
+					</div>
+				</div>
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<p class="card-text">Some text inside the fifth card</p>
+					</div>
+				</div>
+					<div class="card bg-info">
+						<div class="card-body text-center">
+							<p class="card-text">Some text inside the sixth card</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Card Deck -->
+
+			<div class="container">
+				<h2>Card Deck</h2>
+				<p>The <strong>.card-deck</strong> class creates an <strong>equal height and width</strong> grid of cards. The layout will automatically adjust as you insert more cards.</p>
+				<p>In this example we have added extra content to the first card, to make it taller. Notice how the other cards follow.</p>
+  			<p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+					<div class="card-deck">
+						<div class="card bg-primary">
+							<div class="card-body text-center">
+								<p class="card-text">Some text inside the first card</p>
+								<p class="card-text">Some more text to increase the height</p>
+								<p class="card-text">Some more text to increase the height</p>
+								<p class="card-text">Some more text to increase the height</p>
+							</div>
+						</div>
+						<div class="card bg-warning">
+							<div class="card-body text-center">
+								<p class="card-text">Some text inside the second card</p>
+							</div>
+						</div>
+					  <div class="card bg-success">
+							<div class="card-body text-center">
+								<p class="card-text">Some text inside the third card</p>
+							</div>
+						</div>
+						<div class="card bg-danger">
+							<div class="card-body text-center">
+								<p class="card-text">Some text inside the fourth card</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Card Groups -->
+
+					<div class="container">
+						<h2>Card Group</h2>
+  					<p>The .card-group class is similar to .card-deck, which creates an <strong>equal height and width</strong> grid of cards.</p>
+  					<p>However, the .card-group class removes left and right margins between each card.</p>
+  					<p>In this example we have added extra content to the first card, to make it taller. Notice how the other cards follow.</p>
+  					<p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px), <strong>WITH</strong> top and bottom margin:</p>				
+					<div class="card-group">
+						<div class="card bg-primary">
+							<div class="card-body text-center">
+								<p class="card-text">Some text inside the first card</p>
+								<p class="card-text">Some more text to increase the height</p>
+								<p class="card-text">Some more text to increase the height</p>
+								<p class="card-text">Some more text to increase the height</p>
+							</div>
+						</div>
+						<div class="card bg-warning">
+							<div class="card-body text-center">
+								<p class="card-text">Some text to inside the second card</p>
+							</div>
+						</div>
+						<div class="card bg-success">
+							<div class="card-body text-center">
+								<p class="card-text">Some text inside the third card</p>
+							</div>
+						</div>
+						<div class="card bg-danger">
+							<div class="card-body text-center">
+								<p class="card-text">Some text inside the fourth card</p>
+							</div>
+						</div>
+					</div>
+				</div>
+	</body>
+</html>

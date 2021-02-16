@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Collapsible</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../node_modules/bootstrap/compiler/bootstrap.css">
+	<!-- jQuery -->
+	<script src="../node_modules/jquery/dist/jquery.js"></script>
+	<!-- PopperJS -->
+	<script src="../node_modules/popper.js/dist/popper.js"></script>
+	<!-- JavaScript -->
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+	<h1>Collapsible</h1>
+
+	<div class="collapsible">
+		<h1>Simple Collpasible</h1>
+		<p>Click on the button to toggle between showing and hiding content.</p>
+		<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple Collapsible</button>
+		<div id="demo" class="collpase">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio corporis impedit, dicta officiis tempore corrupti, iste, quasi tenetur optio nemo? Ut neque esse quo unde dolor? Dolorum, sit eaque.
+		</div>
+	</div>
+
+	<!-- Simple Collapsible -->
+
+	<div class="container">
+		<h2>Simple Collapsible</h2>
+		<a href="#demo" class="btn btn-primary" data-toggle="collapse">Simple Collapsible</a>
+		<div id="demo" class="collapse">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab delectus quia amet modi odio beatae autem vitae obcaecati. Velit architecto adipisci aperiam minus ipsum, vel culpa aspernatur perferendis praesentium exercitationem.
+		</div>
+	</div>
+
+	<!-- Show Collapsible Content By Default -->
+	
+	<div class="container">
+		<h2>Show Collapsible Content By Default</h2>
+		<p>Add the show class next to the collapse class to show the content by default</p>
+		<p>Click on the button to toggle between showing and hiding content.</p>
+		<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple Collapse</button>
+		<div id="demo" class="collapse show">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+	</div>
+
+	<!-- Accordion Example -->
+
+	<div class="container">
+		<h2>Accordion Example</h2>
+		<p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+		<div id="accordion">
+			<div class="card">
+				<div class="card-header">
+					<a class="card-link" data-toggle="collapse" href="#collapseOne">
+						Collapsible Group Item #1	
+					</a>
+				</div>
+				<div id="collpaseOne" class="collpse show" data-parent="#accordion">
+					<div class="card-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</div>
+				</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+					Collapsible Group Item #2
+				</a>
+			</div>
+			<div id="collapseTwo" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.	
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+					Collapsible Group Item #3	
+				</a>
+			</div>
+			<div id="collapseThree" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
